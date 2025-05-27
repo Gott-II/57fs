@@ -1,0 +1,38 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1{
+    color:#eef1f4;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 45px;
+    animation: rainbowWave 3s infinite linear;
+    display: inline-block;
+      }
+body{image-rendering: optimizeQuality;
+    background-image:url(//assets.volkswagen.com/is/image/cso/stage_51128?Zml0PWNyb3AsMSZmbXQ9d2VicCZxbHQ9Nzkmd2lkPTc2OCZoZWk9NDMyJmJmYz1vZmYmMWM5Ng==) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+} 
+
+p,a,ol{
+    animation: rainbow 4s infinite;
+    font-style: oblique;
+    font-size: 25px;
+}
+@keyframes rainbow {
+    0% { color: rgb(213, 19, 19); }
+    20% { color: orange; }
+    40% { color: rgb(215, 215, 20); }
+    60% { color: rgb(24, 189, 24); }
+    80% { color: rgb(38, 38, 219); }
+    100% { color: rgb(224, 94, 224); }
+}
+
+@keyframes rainbowWave {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}

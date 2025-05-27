@@ -1,0 +1,41 @@
+* {
+    font-family: Impact, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: orangered;
+}
+
+p {
+  color: blueviolet;
+  font-style: italic;
+}
+
+/* селектор по классу */
+/* обращаемся через точку */
+/* классы придумываем сами */
+/* значение для класса пишем в одно слово */
+
+.bold-underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.blue-text {
+  color: rgb(44, 44, 223);
+}
+
+/* селекторы по классу приоритетнее селекторов по тегу - применятся их стили */
+
+p >span {
+    font-size: 28;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(78, 111, 100);
+}
+body{
+    background-color: aqua;
+}
+.img-priority{
+    width: 550px;
+}
