@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+.box {
+    border: 10px solid red; /* Startfarbe */
+    padding: 30px;
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    animation: rainbowBorder 5s infinite; /* Animation läuft unendlich */
+    animation-delay: 3s; /* Verzögerung von 3 Sekunden */
+}
+
+@keyframes rainbowBorder {
+    0% { border-color: rgb(213, 19, 19); }
+    20% { border-color: orange; }
+    40% { border-color: rgb(215, 215, 20); }
+    60% { border-color: rgb(24, 189, 24); }
+    80% { border-color: rgb(38, 38, 219); }
+    100% { border-color: rgb(224, 94, 224); }
+}
+li{
+    list-style: none;
+}
+li::before{content: '👌';
+    
+}
+.round {
+    height: 300px;
+    border: 15px dashed red;
+    margin-left: 20px;
+    margin-right: 60px;
+   margin-bottom: 40px;
+  border-radius: 30px;
+  /* указываем все значения по часовой стрелки начиная с top */
+  /* padding: 20px 0px 0px 40px; */
+  /* пара значений: верх/ низ и слева/ справа */
+  padding: 20px 60px;
+}
+h3{
+    color: blueviolet;
+}
