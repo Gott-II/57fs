@@ -1,0 +1,22 @@
+* {
+  font-family:'Gill Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: '⚡️ ';
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #F06E00;
+}
+
