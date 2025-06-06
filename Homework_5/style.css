@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background-image: url(imagebanner.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0 15px;
+  justify-content: center;
+  z-index: 3;
+}
+nav {
+  display: flex;
+  align-items: end;
+  gap: 40px;
+}
+nav span {
+  color: white;
+  opacity: 0.8;
+}
+
+nav > div > img {
+  opacity: 0.5;
+}
+
+.logo {
+  height: 32px;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+input {
+  opacity: 0.5;
+  transition: opacity 0.2 ease-in-out;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+div:hover .oscar,
+div:hover .oscar-desc,
+div:hover .play,
+div:hover .play-desc,
+div:hover .squere2,
+div:hover .squere4 {
+  opacity: 1;
+}
+.container {
+  position: relative; /* Notwendig für absolute Positionierung */
+  display: inline-block; /* Stellt sicher, dass es sich um einen Block handelt */
+}
+
+.movie1 {
+  height: 680px;
+  width: 560px;
+  padding: 60px 80px;
+  display: block; /* Macht das Bild als Block-Element sichtbar */
+  position: relative; /* Stellt sicher, dass absolute Positionen sich darauf beziehen */
+  z-index: 0; /* Bild bleibt hinter den Elementen */
+}
+
+.squere1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5cap;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background-color: green;
+  color: rgb(251, 253, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Höher als das Bild */
+}
+
+.squere2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  margin: 4cap;
+  font-size: 30px;
+  height: 50px;
+  width: 110px;
+  background-color: orange;
+  color: rgb(251, 253, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 1; /* Sicherstellen, dass es über dem Bild liegt */
+}
+
+
+.movie2 {
+  height: 680px;
+  width: 560px;
+  padding: 60px 80px;
+  display: block; /* Macht das Bild als Block-Element sichtbar */
+  position: relative; /* Stellt sicher, dass absolute Positionen sich darauf beziehen */
+  z-index: 0; /* Bild bleibt hinter den Elementen */
+}
+
+.squere3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5cap;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background-color:red;
+  color: rgb(251, 253, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Höher als das Bild */
+}
+
+.squere4 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  margin: 4cap;
+  font-size: 30px;
+  height: 50px;
+  width: 110px;
+  background-color: orange;
+  color: rgb(251, 253, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 1; /* Sicherstellen, dass es über dem Bild liegt */
+}

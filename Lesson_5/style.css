@@ -1,0 +1,107 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+ul span {
+  background-color: none;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  background-color: coral;
+  color: rgb(226, 216, 216);
+  padding: 20px 50px;
+  /* position: fixed; */
+  /* приклеиваем header через sticky */
+  position: sticky;
+  /* header приклеиться в самом верху страницы */
+  top: 0px;
+  /* делаем приоритетным при наложении элементов */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 10px 50px;
+}
+
+div > span {
+  position: sticky;
+  top: 200px;
+  background-color: rgb(229, 94, 26);
+  color: white;
+  font-weight: bold;
+}
+
+.fixed {
+  position: fixed;
+  right: 100px;
+  top: 300px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(211, 46, 46);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  /* указываем значение глубины относительно других элементов */
+}
+
+main span {
+  position: sticky;
+  top: 200px;
+  background-color: chocolate;
+  color: aquamarine;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+main:hover span {
+  opacity: 1;
+}
+
+.squere {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(224, 61, 224);
+  margin-bottom: 20px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -2;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: rgb(133, 224, 224);
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  /* указываем значение глубины относительно других элементов */
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
