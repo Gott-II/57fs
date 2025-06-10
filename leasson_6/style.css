@@ -1,0 +1,119 @@
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.container-grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 100px 200px 35px 300px;
+}
+
+.container-item{
+  border-radius: 15px;
+    background-color: aquamarine;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.container-grid-minmax {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* высота строк в grid */
+  grid-auto-rows: 80px;
+  gap: 5px;
+}
+
+.grid-item-adapt {
+  border-radius: 10px;
+  background-color: lightpink;
+}
+
+.grid-item-pic {
+  background-image: url('https://www.innovationnewsnetwork.com/wp-content/uploads/2021/02/Primordial-galaxy-1024x576.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #251341;
+  color: white;
+  font-size: 14px;
+}
+
+/* пример множественного селектора по классам */
+.grid-item-adapt,
+.container-item,
+.header,
+.footer,
+.content,
+.nav,
+.planet
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-grid-area {
+  height: 600px;
+  width: 100%;
+  display: grid;
+  /* если нужно можно выставить толщину каждой колонки */
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  /* создаем схему grid зон */
+  grid-template-areas:
+    "header header header nav"
+    "content content sun nav"
+    "content content 🪐 nav"
+    "footer footer footer footer"
+  ;
+}
+
+.planet {
+  background-image: url('https://images.theconversation.com/files/615187/original/file-20240822-16-mmtmxi.jpg?ixlib=rb-4.1.0&rect=0%2C178%2C4964%2C2482&q=45&auto=format&w=1356&h=668&fit=crop');
+  grid-area: 🪐;
+  font-size: 60px;
+}
+
+.header {
+  background-color: #ACADE8;
+  /* назначаем зону для элемента */
+  grid-area: header;
+}
+
+.footer {
+  background-color: #0A014F;
+  color: white;
+  grid-area: footer;
+}
+
+.content {
+  background-color: #D65780;
+  color: white;
+  grid-area: content;
+}
+
+.nav {
+  background-color: #F3E86F;
+  grid-area: nav;
+}
+
+.sun {
+  background-image: url('https://www.worldatlas.com/r/w1200/upload/50/d4/a6/shutterstock-84203080.jpg');
+grid-area: sun;
+}
+
+.sun,
+.planet {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
