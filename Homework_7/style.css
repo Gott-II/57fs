@@ -14,12 +14,12 @@ h1 {
   position: sticky;
   top: 0px;
   z-index: 2;
-  background-image: url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0"), url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0"), url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0");
+  background-image: url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0"),
+    url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0"),
+    url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0");
   background-position: center, left top, right bottom;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-color: #6a7b8d;
- 
-  
 }
 .container-grid-minmax {
   display: grid;
@@ -113,5 +113,4 @@ button:hover {
 .such-container {
   opacity: 0.8;
   margin: 20px;
-  
 }
