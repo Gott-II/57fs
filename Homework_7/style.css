@@ -1,0 +1,107 @@
+* {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 85px;
+  padding-top: 125px;
+  text-align: center;
+  background-image: url("https://th.bing.com/th/id/R.2d133aab9c727a82c4b8ac696171143b?rik=igr53cKLGSCgmA&riu=http%3a%2f%2fpngimg.com%2fuploads%2fstar_wars_logo%2fstar_wars_logo_PNG29.png&ehk=hsDSiH%2f6nmpq4zs5Jb99JFnuqthEOdP1AcLTnojRcaM%3d&risl=&pid=ImgRaw&r=0");
+  color: rgb(114, 9, 79);
+}
+.container-grid-minmax {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* высота строк в grid */
+  grid-auto-rows: 300px;
+  gap: 5px;
+  text-align: end;
+}
+
+.grid-item-adapt:hover {
+  transform: scale(1.5);
+}
+
+.grid-item-adapt {
+  border-radius: 10px;
+  background-color: rgb(182, 253, 255);
+  border: 2px solid violet;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-item-pic {
+  background-image: url("darth-vader-1.jpg");
+  color: azure;
+}
+
+.grid-item-pic2 {
+  background-image: url("darth-vader-points-to-attributes.jpg");
+  color: rgb(8, 8, 8);
+}
+
+.grid-item-pic3 {
+  background-image: url("https://imgix.ranker.com/user_node_img/86/1706282/original/obi-wan-kenobi-photo-u31?fit=crop&fm=pjpg&q=60&w=650&dpr=2");
+  color: azure;
+}
+.grid-item-pic4 {
+  background-image: url("https://th.bing.com/th/id/OIP.OYGUN4xj5HOSId90bSD4uwAAAA?rs=1&pid=ImgDetMain");
+  color: azure;
+}
+
+.grid-item-pic5 {
+  background-image: url("https://th.bing.com/th/id/R.127bf4d43ae276e58c7174ff2da03bea?rik=qpPe0jhDslyGKQ&pid=ImgRaw&r=0");
+}
+
+.grid-item-pic6 {
+  background-image: url("https://img-4.linternaute.com/Y8lkeJGOq4PRzHtuLmU-LSzLL90=/1000x/smart/609b77a54a4e45a3ac699b6a164528b2/ccmcms-linternaute/10525614.jpg");
+  color: azure;
+}
+
+.grid-item-pic7 {
+  background-image: url("https://wallpaperaccess.com/full/1920273.jpg");
+  color: azure;
+}
+
+.grid-item-pic8 {
+  background-image: url("https://w0.peakpx.com/wallpaper/923/851/HD-wallpaper-master-yoda-jedi-jedi-master-revenge-of-the-sith-star-wars-star-wars-episode-3-starwars.jpg");
+  color: azure;
+}
+
+.grid-item-pic9 {
+  background-image: url("https://th.bing.com/th/id/R.a24b934a0e3d04a54795181312152ad9?rik=wkLYTMSS90y8Zg&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f27600000%2fboba-fett-boba-fett-27694701-1280-1920.jpg&ehk=Lgahmdc2eUL9UGcbYr5SReDXJ6CRWIvj3lUCZzFxRtQ%3d&risl=&pid=ImgRaw&r=0");
+  color: azure;
+}
+.grid-item-pic10 {
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/000/049/438/large/bobafett1010_2.jpg?1398937315");
+  color: azure;
+}
+
+#suchfeld {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.such-container {
+  opacity: 0.8;
+  margin: 20px;
+  
+}
