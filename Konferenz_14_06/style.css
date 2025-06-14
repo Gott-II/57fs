@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:wght@100;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.coffe {
+  height: 320px;
+  background-image: url("art_coffe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  color: rgb(155, 138, 101);
+  
+}
+
+h1 {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 85px;
+  padding-top: 125px;
+  text-align: center;
+}
+
+.mitte {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.mitte div > p {
+  text-align: justify;
+  line-height: 1.6;
+  text-indent: 30px;
+  padding: 0 6px;
+  color: rgb(50, 75, 50); /* leicht dunkler für besseren Kontrast */
+  font-weight: 600;
+}
+
+.links,
+.rechts {
+  width: 48%;
+}
+
+.links > div,
+.rechts > div {
+  margin: 100px 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 60px;
+  height: 150px;
+  overflow-y: auto;
+  border: 2px solid rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  background-color: rgb(233, 228, 213);
+}
+
+a {
+  color: rgb(19, 161, 243); /* Deine gewünschte Farbe */
+  text-decoration: none; /* Falls du Unterstreichungen entfernen möchtest */
+  
+}
+
+a:hover {
+  color: rgb(16, 52, 131); /* Farbe, wenn man mit der Maus drüber fährt */
+}
+
