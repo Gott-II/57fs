@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+form input {
+    margin: 5px;
+    padding: 8px;
+}
+
+.btn {
+    border: none;
+    background-color: lightblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-container {
+    font-size: 0;
+    margin-top: 20px;
+}
+
+.left {
+    background-color: lightblue;
+    margin-right: 0;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid black;
+}
+
+.right {
+    background-color: lightpink;
+    margin-left: 0;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid black;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li.animate {
+    animation: fadeInSlide 0.5s ease forwards;
+}

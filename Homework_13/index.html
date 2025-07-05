@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Küchlein-Bibliothek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="book-form">
+        <input type="text" name="title" placeholder="Titel der Buches" required>
+        <input type="text" name="author" placeholder="Autorname" required>
+        <button type="submit" class="btn">Hinzufügen</button>
+    </form>
+
+    <ul id="book-list"></ul>
+
+    <div class="btn-container">
+        <button id="clear-list" class="btn left">Liste leeren</button>
+        <button id="remove-one" class="btn right">Eintrag entfernen</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
