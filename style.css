@@ -26,4 +26,16 @@ h1>span {
   color: #F06E00;
   font-size: 42px;
 }
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
 
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
