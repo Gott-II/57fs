@@ -36,6 +36,15 @@ body.light-mode {
 }
 
 body.dark-mode {
-  background-color: black;
-  color: white;
+  background-color: #000000; /* tiefschwarz */
+  color: #ffffff; /* klarer weißer Text */
 }
+
+body.dark-mode a {
+  color: #F06E00; /* leuchtendes Orange für Links */
+}
+
+body.dark-mode a:hover {
+  color: #FFD700; /* goldene Farbe beim Hover */
+}
+
