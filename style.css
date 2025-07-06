@@ -31,13 +31,13 @@ body {
 }
 
 body.light-mode {
-  background-color: white;
+  background-color: rgb(198, 233, 165);
   color: black;
 }
 
 body.dark-mode {
   background-color: #000000; /* tiefschwarz */
-  color: #ffffff; /* klarer weißer Text */
+  color: #f1c9c9; /* klarer weißer Text */
 }
 
 body.dark-mode a {
