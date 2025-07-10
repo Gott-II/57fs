@@ -11,11 +11,18 @@ let books = [
 
 function renderList() {
     list.innerHTML = '';
-    books.map(book => {
+    for (let i = 0; i < books.length; i++) {
+        const book = books[i];
         const li = document.createElement('li');
         li.textContent = `"${book.title}" von ${book.author}`;
+
+        // Füge Klasse für Animation nur dem zuletzt hinzugefügten Buch hinzu
+        if (i === books.length - 1) {
+            li.classList.add('animate');
+        }
+
         list.appendChild(li);
-    });
+    }
 }
 
 form.addEventListener('submit', function (e) {
@@ -50,18 +57,5 @@ removeOneBtn.addEventListener('click', function () {
 
 renderList();
 
-function renderList() {
-    list.innerHTML = '';
-    books.map((book, index) => {
-        const li = document.createElement('li');
-        li.textContent = `"${book.title}" von ${book.author}`;
 
-        // Füge Klasse für Animation nur dem zuletzt hinzugefügten Buch hinzu
-        if (index === books.length - 1) {
-            li.classList.add('animate');
-        }
-
-        list.appendChild(li);
-    });
-}
 
