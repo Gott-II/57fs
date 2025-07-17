@@ -20,25 +20,67 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("signin-form");
   const message = document.getElementById("message");
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const email = form.email.value.trim();
     const password = form.password.value;
 
-    // Dummy Login-Prüfung
-    const dummyEmail = "test@example.com";
-    const dummyPassword = "geheim123";
-
-    if (email === dummyEmail && password === dummyPassword) {
-      message.textContent = "Anmeldung erfolgreich!";
-      message.style.color = "green";
-      form.reset();
-    } else {
-      message.textContent = "Ungültige Anmeldedaten!";
-      message.style.color = "red";
+    if (!validateEmail(email)) {
+      showMessage("Ungültige E-Mail-Adresse!", "red");
+      return;
     }
+
+    if (password.length < 6) {
+      showMessage("Das Passwort muss mindestens 6 Zeichen lang sein.", "red");
+      return;
+    }
+
+    const credentials = { email, password };
+    const result = await fetchLogin(credentials);
+
+    if (result && result.access_token) {
+      showMessage("Anmeldung erfolgreich! 🎉", "green");
+      console.log("Token:", result.access_token);
+      // Optional: Weiterleitung oder Speicherung des Tokens
+    } else {
+      showMessage("Login fehlgeschlagen. Überprüfe deine Daten!", "red");
+    }
+
+    form.reset();
   });
+
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function showMessage(text, color) {
+    message.textContent = text;
+    message.style.color = color;
+  }
+
+  async function fetchLogin(credentials) {
+    try {
+      const res = await fetch("https://api.escuelajs.co/api/v1/auth/login", {
+        method: "POST",
+        body: JSON.stringify(credentials),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error(`HTTP-Fehler ${res.status}`);
+      }
+
+      const data = await res.json();
+      return data;
+    } catch (error) {
+      console.error("Fehler beim Login:", error.message);
+      return null;
+    }
+  }
 });
+
 
 
