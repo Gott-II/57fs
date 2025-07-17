@@ -14,7 +14,7 @@ async function fetchProfile() {
   }
 
   try {
-    const res = await fetch("https://api.escuelajs.co/api/v1/auth/profile", {
+    const res = await fetch("https://api.escuelajs.co/api/v1/auth/profile/", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
