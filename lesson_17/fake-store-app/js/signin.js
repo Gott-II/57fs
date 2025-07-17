@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("accessToken", access_token);
       showMessage("Login erfolgreich! 🎉", "green");
       console.log("Access Token:", access_token);
+      window.location.href = "./profile"
 
       // Optional: Weiterleitung nach erfolgreichem Login
       // window.location.href = "/dashboard.html";
