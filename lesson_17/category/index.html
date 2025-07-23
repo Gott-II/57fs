@@ -1,0 +1,39 @@
+const categoriesList = document.getElementById("categories");
+
+async function fetchCategories() {
+  if (!categoriesList) {
+    console.error("⚠️ Element mit der ID 'categories' wurde nicht gefunden.");
+    return;
+  }
+
+  try {
+    const res = await fetch("https://api.escuelajs.co/api/v1/categories");
+    if (!res.ok) {
+      throw new Error(`Fehler beim Laden der Kategorien: ${res.status}`);
+    }
+
+    const categories = await res.json();
+
+    categoriesList.innerHTML = ""; // 🧹 Vorherige Inhalte entfernen (optional)
+
+    categories.forEach(({ id, image, name, slug }) => {
+      const categoryItem = document.createElement("li");
+      categoryItem.classList.add("category-item");
+
+      const img = document.createElement("img");
+      img.src = image;
+      img.alt = name;
+      img.loading = "lazy";
+
+      const p = document.createElement("p");
+      p.textContent = name;
+
+      categoryItem.append(p, img);
+      categoriesList.append(categoryItem);
+    });
+  } catch (error) {
+    console.error("🚨 Fehler beim Abrufen der Kategorien:", error.message);
+  }
+}
+
+fetchCategories();

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkte verwalten</title>
+    <script src="./add-product.js" defer></script>
+  </head>
+  <body>
+    <h1>Produkt hinzufügen</h1>
+    <form id="product-form">
+      <input type="text" placeholder="Titel" name="title" />
+      <input type="text" placeholder="Preis" name="price" />
+      <input type="text" placeholder="Beschreibung" name="description" />
+
+      <select name="categoryId" id="categoryId"></select>
+
+      <input type="text" placeholder="Bild-URL" name="image" />
+      <button type="submit">Absenden</button>
+    </form>
+
+    <h2>Kategorien</h2>
+    <ul id="categories"></ul>
+
+    <h2>Produktliste</h2>
+    <ul id="products-list"></ul>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.category-item {
+  max-width: 200px;
+  background-color: lightgrey;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.category-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
