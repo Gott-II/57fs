@@ -1,10 +1,13 @@
+/* Grundstil */
 body {
   font-family: sans-serif;
   text-align: center;
   padding: 20px;
+  margin: 0;
   background: linear-gradient(to top, #dbeafe, #ffffff);
 }
 
+/* Formular */
 form {
   margin-bottom: 20px;
 }
@@ -13,6 +16,8 @@ input {
   padding: 8px;
   font-size: 16px;
   width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 button {
@@ -21,9 +26,50 @@ button {
   background-color: #2563eb;
   color: white;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #1e40af;
+}
+
+/* Wetteranzeige */
 #weather-result img {
   margin-top: 10px;
+  max-width: 100px;
 }
+
+/* Wetterkarte */
+.card {
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 300px;
+}
+
+/* Tourney-Schriftart */
+.tourney-bold {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 125;
+}
+
+/* Responsive Eingabe */
+@media (max-width: 500px) {
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
