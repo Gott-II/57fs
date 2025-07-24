@@ -39,7 +39,7 @@ body.buttom {
 }
 
 body.light-mode {
-  background-color: rgb(198, 233, 165);
+  background-color: rgb(164, 225, 233);
   color: black;
 }
 
@@ -54,4 +54,10 @@ body.dark-mode a {
 
 body.dark-mode a:hover {
   color: #ffd700; /* goldene Farbe beim Hover */
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
